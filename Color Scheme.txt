@@ -1,0 +1,12 @@
+#F10000 -- Bright Red -- Links
+#E50000 -- Red -- Base Red
+#B00000 -- Slightly Darker Red -- Background Red
+#2D0000 -- Dark Red -- 
+
+
+#000000 -- Black -- Base Color
+#050505 -- Black Light -- Background highlights
+#333333 -- Grey Dark -- Unused
+#999999 -- Grey Light -- Most test
+#D0D0D0 -- Grey Very Light -- Titles
+#FFFFFF -- White -- Header Text

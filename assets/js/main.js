@@ -226,12 +226,14 @@
         const gameModal = new bootstrap.Modal(gameModalEl)
         const gameFrame = select('#gameFrame')
         const gameTitle = select('#gameModalTitle')
+        const gameOpenTab = select('#gameOpenTab')
         on('click', '.play-embed', function (e) {
             e.preventDefault()
             const name = (this.getAttribute('aria-label') || 'Game').replace(/^Play\s+/, '')
             gameFrame.setAttribute('src', this.getAttribute('href'))
             gameFrame.setAttribute('title', name)
             gameTitle.textContent = name
+            gameOpenTab.setAttribute('href', this.getAttribute('href'))
             gameModalEl.classList.toggle('portrait', this.dataset.orient === 'portrait')
             gameModal.show()
         }, true)

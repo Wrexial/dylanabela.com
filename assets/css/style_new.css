@@ -1648,6 +1648,32 @@ footer {
     color: #FFFFFF;
 }
 
+#gameModal .game-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+#gameModal .game-open-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: 3px 12px;
+    font-size: .75rem;
+    line-height: 1;
+    color: #D0D0D0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+#gameModal .game-open-tab:hover {
+    color: #FFFFFF;
+    background-color: #B00000;
+    border-color: #B00000;
+}
+
 #gameModal .btn-close {
     filter: invert(1) grayscale(1) brightness(1.8);
     opacity: .8;

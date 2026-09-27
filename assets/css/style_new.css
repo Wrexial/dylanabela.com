@@ -1386,6 +1386,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    container-type: inline-size;
 }
 
 .card-blog .card-category-box {
@@ -1425,6 +1426,13 @@ a {
     .card-blog .card-title a {
         color: #FFFFFF;
     }
+
+/* Long titles: shrink to fit on a single line instead of wrapping */
+.card-blog .card-title--fit a {
+    white-space: nowrap;
+    font-size: 1rem; /* fallback for browsers without container queries */
+    font-size: min(1.3rem, 7cqw);
+}
 
 .card-blog .card-description {
     color: #CFCFCF;

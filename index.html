@@ -6,7 +6,7 @@
     <meta property="og:title" content="Dylan Abela" />
     <meta property="og:url" content="https://www.dylanabela.com/" />
     <meta property="og:description" content="The online portfolio of game developer Dylan Abela." />
-    <meta property="og:image" content="https://www.dylanabela.com/img/header/ogpicture2.png" />
+    <meta property="og:image" content="https://www.dylanabela.com/assets/img/ogpicture.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="200" />
     <meta property="og:image:height" content="200" />
@@ -15,17 +15,14 @@
     <meta name="author" content="Dylan Abela">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Dylan Abela</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style_new.css" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Dylan Abela" class="img-fluid"></a>
@@ -36,7 +33,7 @@
                     <li><a class="nav-link scrollto " href="#work">Commercial</a></li>
                     <li><a class="nav-link scrollto " href="#blog">Personal</a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <i class="bi bi-list mobile-nav-toggle" role="button" tabindex="0" aria-label="Toggle navigation"></i>
             </nav>
         </div>
     </header>
@@ -54,30 +51,39 @@
     <main id="main">
         <section id="about" class="about-mf sect-pt4 route">
             <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-lg-11">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <span class="title-s"><i class="bi bi-controller"></i></span>
-                                    <span data-purecounter-start="0" data-purecounter-end="11" class="purecounter">0</span> Commercial Games
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <span class="title-s"><i class="bi bi-joystick"></i></span>
-                                    <span data-purecounter-start="0" data-purecounter-end="20" class="purecounter">0</span> Personal Games
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                                <div class="count-box">
-                                    <span class="title-s"><i class="bi bi-clock"></i></span>
-                                    <span data-purecounter-start="0" data-purecounter-end="8" class="purecounter">0</span> Years of experience
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                            </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h2 class="title-a">
+                                About
+                            </h2>
+                            <p class="subtitle-a">
+                                Game developer based in Malta.
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="count-box">
+                            <span class="title-s"><i class="bi bi-controller"></i></span>
+                            <span data-purecounter-start="0" data-purecounter-end="26" class="purecounter">0</span>
+                            <span class="count-label">Commercial Games</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="count-box">
+                            <span class="title-s"><i class="bi bi-joystick"></i></span>
+                            <span data-purecounter-start="0" data-purecounter-end="22" class="purecounter">0</span>
+                            <span class="count-label">Personal Projects</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="count-box">
+                            <span class="title-s"><i class="bi bi-clock"></i></span>
+                            <span id="years-experience" data-purecounter-start="0" data-purecounter-end="12" class="purecounter">0</span>
+                            <span class="count-label">Years of Experience</span>
                         </div>
                     </div>
                 </div>
@@ -89,52 +95,52 @@
                                     <div class="row">
                                         <div class="col-sm-6 col-md-5">
                                             <div class="about-img">
-                                                <img src="assets/img/dylanabela.jpg" class="img-fluid rounded b-shadow-a" height="200" width="200" alt="">
+                                                <img src="assets/img/dylanabela.jpg" class="img-fluid rounded" height="200" width="200" alt="Dylan Abela" loading="lazy">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-7">
                                             <div class="about-info">
-                                                <p class="about-info"><span class="bi bi-person-fill" /><span class="title-s"> Name: </span> Dylan Abela</p>
-                                                <p class="about-info"><span class="bi bi-person-badge-fill" /><span class="title-s"> Profile: </span> Game Developer</p>
-                                                <p class="about-info"><span class="bi bi-envelope-fill" /><span class="title-s"> Email: </span><a href="mailto:dylan.abela@gmail.com">dylan.abela@gmail.com</a></p>
-                                                <p class="about-info"><span class="bi bi-telephone-fill" /><span class="title-s"> Phone: </span><a href="tel:0035699912192">(356) 99912192</a></p>
+                                                <p class="about-info"><span class="bi bi-person-fill"></span><span class="title-s"> Name: </span> Dylan Abela</p>
+                                                <p class="about-info"><span class="bi bi-person-badge-fill"></span><span class="title-s"> Profile: </span> Game Developer</p>
+                                                <p class="about-info"><span class="bi bi-envelope-fill"></span><span class="title-s"> Email: </span><a href="mailto:dylan.abela@gmail.com">dylan.abela@gmail.com</a></p>
+                                                <p class="about-info"><span class="bi bi-telephone-fill"></span><span class="title-s"> Phone: </span><a href="tel:0035699912192">(356) 99912192</a></p>
                                                 <div class="socials">
                                                     <ul>
-                                                        <li><a href="https://www.linkedin.com/in/dylan-abela-a4a44a74/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                                                        <li><a href="https://www.facebook.com/dylan.abela"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                                                        <li><a href="https://discord.com/users/601590936920653854"><span class="ico-circle"><i class="bi bi-discord"></i></span></a></li>
-                                                        <li><a href="https://github.com/Wrexial"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                                                        <li><span class="ico-circle"><a href="https://www.linkedin.com/in/dylan-abela-a4a44a74/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a></span></li>
+                                                        <li><span class="ico-circle"><a href="https://www.facebook.com/dylan.abela" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a></span></li>
+                                                        <li><span class="ico-circle"><a href="https://discord.com/users/601590936920653854" aria-label="Discord" target="_blank" rel="noopener"><i class="bi bi-discord"></i></a></span></li>
+                                                        <li><span class="ico-circle"><a href="https://github.com/Wrexial" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></span></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="skill-mf">
-                                        <p class="title-s">Skills</p>
+                                        <h3 class="title-s">Skills</h3>
                                         <div class="row">
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" src="assets/img/skills/unity-logo.png"><span class="title-s">Unity</span></div>
+                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" loading="lazy" src="assets/img/skills/unity-logo.png"><span class="title-s">Unity</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="C#" height="40" width="40" src="assets/img/skills/csharp-logo.png"><span class="title-s">C#</span></div>
+                                                <div class="skill-mf-bit"><img alt="C#" height="40" width="40" loading="lazy" src="assets/img/skills/csharp-logo.png"><span class="title-s">C#</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" src="assets/img/skills/aspnetcore-logo.png"><span class="title-s">ASP.Net Core</span></div>
+                                                <div class="skill-mf-bit"><img alt="ASP.Net Core" height="40" width="40" loading="lazy" src="assets/img/skills/aspnetcore-logo.png"><span class="title-s">ASP.Net Core</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" src="assets/img/skills/git-logo.png"><span class="title-s">Git</span></div>
+                                                <div class="skill-mf-bit"><img alt="Git" height="40" width="40" loading="lazy" src="assets/img/skills/git-logo.png"><span class="title-s">Git</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="HTML" height="40" width="40" src="assets/img/skills/html-logo.png"><span class="title-s">HTML</span></div>
+                                                <div class="skill-mf-bit"><img alt="HTML" height="40" width="40" loading="lazy" src="assets/img/skills/html-logo.png"><span class="title-s">HTML</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" src="assets/img/skills/js-logo.png"><span class="title-s">Javascript</span></div>
+                                                <div class="skill-mf-bit"><img alt="Javascript" height="40" width="40" loading="lazy" src="assets/img/skills/js-logo.png"><span class="title-s">Javascript</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Unity" height="40" width="40" src="assets/img/skills/php-logo.png"><span class="title-s">PHP</span></div>
+                                                <div class="skill-mf-bit"><img alt="PHP" height="40" width="40" loading="lazy" src="assets/img/skills/php-logo.png"><span class="title-s">PHP</span></div>
                                             </div>
                                             <div class="col-xl-4 col-lg-4 col-sm-6">
-                                                <div class="skill-mf-bit"><img alt="Photoshop" height="40" width="40" src="assets/img/skills/photoshop-logo.png"><span class="title-s">Photoshop</span></div>
+                                                <div class="skill-mf-bit"><img alt="Photoshop" height="40" width="40" loading="lazy" src="assets/img/skills/photoshop-logo.png"><span class="title-s">Photoshop</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -142,9 +148,9 @@
                                 <div class="col-md-6">
                                     <div class="about-me pt-4 pt-md-0">
                                         <div class="title-box-2">
-                                            <h5 class="title-left">
+                                            <h3 class="title-left">
                                                 About me
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <p class="lead">
                                             A twenty-late-something year old guy from sunny Malta, he is a dedicated gamer with a variety of gaming interests,
@@ -164,15 +170,14 @@
                 </div>
             </div>
         </section>
-
         <section id="work" class="portfolio-mf sect-pt4 route">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box text-center">
-                            <h3 class="title-a">
+                            <h2 class="title-a">
                                 Commercial Games
-                            </h3>
+                            </h2>
                             <p class="subtitle-a">
                                 Games I've professionally worked on.
                             </p>
@@ -180,366 +185,502 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="options">
-                        <div class="option active" style="--optionBackground: url('./../../assets/img/commercialgames/holdfast.png'); " data-sml="assets/img/commercialgames/holdfast.png" data-lrg="assets/img/commercialgames/speechie.png">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <img src="https://pbs.twimg.com/profile_images/822139516735602689/PPRgxYMd_400x400.jpg"></img>
-                                </div>
-                                <div class="info">
-                                    <div class="main"><a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast: Nations At War Website" target="_blank">Holdfast: Nations At War</a></div>
-                                    <div class="sub"><span class="w-ctegory"><a href="https://anvilgamestudios.com/presskit/" aria-label="Anvil Game Studios Website" target="_blank">Anvil Game Studios</a></span> / <span class="w-date">March 2020</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground: url('./../../assets/img/commercialgames/speechie.png'); " data-sml="assets/img/commercialgames/speechie.png" data-lrg="assets/img/commercialgames/holdfast.png">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <img src="https://pbs.twimg.com/profile_images/822139516735602689/PPRgxYMd_400x400.jpg"></img>
-                                </div>
-                                <div class="info">
-                                    <div class="main"><a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast: Nations At War Website" target="_blank">Holdfast: Nations At War</a></div>
-                                    <div class="sub"><span class="w-ctegory"><a href="https://anvilgamestudios.com/presskit/" aria-label="Anvil Game Studios Website" target="_blank">Anvil Game Studios</a></span> / <span class="w-date">March 2020</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tree"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Iteresuselle</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tint"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Idiefe</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-sun"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Inatethi</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-snowflake"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Oretemauw</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tree"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Iteresuselle</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tint"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Idiefe</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-sun"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Inatethi</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-snowflake"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Oretemauw</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tree"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Iteresuselle</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-                            <div class="shadow"></div>
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="fas fa-tint"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Idiefe</div>
-                                    <div class="sub">Omuke trughte a otufta</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-filters" data-target="commercial-grid">
+                    <button type="button" class="project-filter active" data-filter="all">All</button>
+                    <button type="button" class="project-filter" data-filter="mobile">Mobile</button>
+                    <button type="button" class="project-filter" data-filter="pc">PC</button>
+                    <button type="button" class="project-filter" data-filter="slot">Slots</button>
                 </div>
-            </div>
-        </section>
-
-        <section id="work" class="portfolio-mf sect-pt4 route">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="title-box text-center">
-                            <h3 class="title-a">
-                                Commercial Games
-                            </h3>
-                            <p class="subtitle-a">
-                                Games I've professionally worked on.
-                            </p>
-                            <div class="line-mf"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="row" id="commercial-grid">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast: Nations At War Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/holdfast.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/almighty-mustang-express" aria-label="Almighty Mustang Express Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/almighty-mustang-express-large.jpg" alt="Almighty Mustang Express" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast: Nations At War Website" target="_blank">Holdfast: Nations At War</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/almighty-mustang-express" aria-label="Almighty Mustang Express Website" target="_blank" rel="noopener">Almighty Mustang Express</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="https://anvilgamestudios.com/presskit/" aria-label="Anvil Game Studios Website" target="_blank">Anvil Game Studios</a></span> / <span class="w-date">March 2020</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">April 2026</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/speechie/" aria-label="Speechie Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/speechie.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/7s-fire-blitz-liberty-reels" aria-label="7s Fire Blitz Liberty Reels Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/7s-fire-blitz-liberty-reels-large.jpg" alt="7s Fire Blitz Liberty Reels" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/speechie/" aria-label="Speechie Website" target="_blank">Speechie</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/7s-fire-blitz-liberty-reels" aria-label="7s Fire Blitz Liberty Reels Website" target="_blank" rel="noopener">7s Fire Blitz Liberty Reels</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">December 2018</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">April 2026</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/nothing-to-declare/" aria-label="Nothing To Declare Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/ntd.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/shimmering-sands-jackpot-royale-express" aria-label="Shimmering Sands JRE Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/shimmering-sands-jackpot-royale-express-large.jpg" alt="Shimmering Sands JRE" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/nothing-to-declare/" aria-label="Nothing To Declare Website" target="_blank">Nothing To Declare</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/shimmering-sands-jackpot-royale-express" aria-label="Shimmering Sands JRE Website" target="_blank" rel="noopener">Shimmering Sands JRE</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">September 2018</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">January 2026</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/cannafarm-game/" aria-label="CannaFarm Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/cannafarm.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/hard-rock-hotstepper" aria-label="Hard Rock Hotstepper Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/hard-rock-hotstepper-large.jpg" alt="Hard Rock Hotstepper" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/cannafarm-game/" aria-label="CannaFarm Website" target="_blank">CannaFarm</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/hard-rock-hotstepper" aria-label="Hard Rock Hotstepper Website" target="_blank" rel="noopener">Hard Rock Hotstepper</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">November 2017</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">October 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/sprint-cars-mobile-game/" aria-label="Dirt Trackin' Sprint Cars Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/sprintcars.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/flaming-hot-chilli-pot-jackpot-royale-express" aria-label="Flaming Hot Chilli Pot JRE Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/flaming-hot-chilli-pot-jackpot-royale-express-large.jpg" alt="Flaming Hot Chilli Pot JRE" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/sprint-cars-mobile-game/" aria-label="Dirt Trackin' Sprint Cars Website" target="_blank">Dirt Trackin' Sprint Cars</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/flaming-hot-chilli-pot-jackpot-royale-express" aria-label="Flaming Hot Chilli Pot JRE Website" target="_blank" rel="noopener">Flaming Hot Chilli Pot JRE</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">October 2017</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">July 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/sprint-cars-2/" aria-label="Saif Trip Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/saiftrip.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/peaky-blinders-2-the-shelby-empire-jackpot-royale" aria-label="Peaky Blinders 2 The Shelby Empire JPR Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/peaky-blinders-2-the-shelby-empire-jackpot-royale-large.jpg" alt="Peaky Blinders 2 The Shelby Empire JPR" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/sprint-cars-2/" aria-label="Saif Trip Website" target="_blank">Saif Trip</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/peaky-blinders-2-the-shelby-empire-jackpot-royale" aria-label="Peaky Blinders 2 The Shelby Empire JPR Website" target="_blank" rel="noopener">Peaky Blinders 2 The Shelby Empire JPR</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">April 2017</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">May 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/airside-andy/" aria-label="Airside Andy Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/airsideandy.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/almighty-beast-big-money-jackpot-royale" aria-label="Almighty Beast Big Money JPR Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/almighty-beast-big-money-jackpot-royale-large.jpg" alt="Almighty Beast Big Money JPR" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/airside-andy/" aria-label="Airside Andy Website" target="_blank">Airside Andy</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/almighty-beast-big-money-jackpot-royale" aria-label="Almighty Beast Big Money JPR Website" target="_blank" rel="noopener">Almighty Beast Big Money JPR</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">March 2016</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">May 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="http://www.flying-squirrel-games.com/portfolio-items/oobedoo/" aria-label="OobEdoO Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/oobedoo.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/saint-fished" aria-label="Saint Fished Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/saint-fished-large.jpg" alt="Saint Fished" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/oobedoo/" aria-label="OobEdoO Website" target="_blank">OobEdoO</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/saint-fished" aria-label="Saint Fished Website" target="_blank" rel="noopener">Saint Fished</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank">Flying Squirrel Games</a></span> / <span class="w-date">January 2016</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">April 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="https://www.amazon.com/VTree-Entertainment-Beasty-Karts/dp/B019T76ZSA/" aria-label="Beasty Karts Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/beastykarts.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/big-money-frenzy-golden-magnet" aria-label="Big Money Frenzy Golden Magnet Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/big-money-frenzy-golden-magnet-large.jpg" alt="Big Money Frenzy Golden Magnet" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="https://www.amazon.com/VTree-Entertainment-Beasty-Karts/dp/B019T76ZSA/" aria-label="Beasty Karts Website" target="_blank">Beasty Karts</a></h2>
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/big-money-frenzy-golden-magnet" aria-label="Big Money Frenzy Golden Magnet Website" target="_blank" rel="noopener">Big Money Frenzy Golden Magnet</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="https://www.playmagic.com.mt/" aria-label="Playmagic Website" target="_blank">PlayMagic Ltd</a></span> / <span class="w-date">December 2015</span>
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">March 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="https://www.facebook.com/RamboTheMobileGame/" aria-label="Rambo The Mobile Game Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/rambo.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.slotcatalog.com/en/slots/living-with-stan" aria-label="Living with Stan Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/living-with-stan-large.jpg" alt="Living with Stan" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="https://www.facebook.com/RamboTheMobileGame/" aria-label="Rambo The Mobile Game Website" target="_blank">Rambo The Mobile Game</a></h2>
+                                    <h3 class="w-title"><a href="https://www.slotcatalog.com/en/slots/living-with-stan" aria-label="Living with Stan Website" target="_blank" rel="noopener">Living with Stan</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="https://www.playmagic.com.mt/" aria-label="Playmagic Website" target="_blank">PlayMagic Ltd</a></span> / <span class="w-date">September 2015</span>
+                                        <span class="w-ctegory"><a href="https://www.slotcatalog.com/en/slots/living-with-stan" aria-label="Lucksome Website" target="_blank" rel="noopener">Lucksome</a></span> <span class="w-date">August 2024</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
                         <div class="work-box">
-                            <a href="https://www.amazon.com/VTree-Entertainment-Beasty-Skaters-Android/dp/B00QXYZ638" aria-label="Beasty Skaters Website" target="_blank">
-                                <div class="work-img">
-                                    <img src="assets/img/commercialgames/beastyskaters.png" alt="" class="img-fluid">
-                                </div>
-                            </a>
+                            <div class="work-img">
+                                <a href="https://www.slotcatalog.com/en/slots/ted-afterparty" aria-label="Ted Afterparty Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/ted-afterparty-large.jpg" alt="Ted Afterparty" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
                             <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
                                 <div class="row">
-                                    <h2 class="w-title"><a href="https://www.amazon.com/VTree-Entertainment-Beasty-Skaters-Android/dp/B00QXYZ638" aria-label="Beasty Skaters Website" target="_blank">Beasty Skaters</a></h2>
+                                    <h3 class="w-title"><a href="https://www.slotcatalog.com/en/slots/ted-afterparty" aria-label="Ted Afterparty Website" target="_blank" rel="noopener">Ted Afterparty</a></h3>
                                     <div class="w-more">
-                                        <span class="w-ctegory"><a href="https://www.playmagic.com.mt/" aria-label="Playmagic Website" target="_blank">PlayMagic Ltd</a></span> / <span class="w-date">December 2014</span>
+                                        <span class="w-ctegory"><a href="https://www.slotcatalog.com/en/slots/ted-afterparty" aria-label="Lucksome Website" target="_blank" rel="noopener">Lucksome</a></span> <span class="w-date">July 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/bon-bomb-luxpots-jackpot-royale" aria-label="Bon Bomb Luxpots Megaways JPR Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/bon-bomb-luxpots-megaways-jackpot-royale-large.jpg" alt="Bon Bomb Luxpots Megaways JPR" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/bon-bomb-luxpots-jackpot-royale" aria-label="Bon Bomb Luxpots Megaways JPR Website" target="_blank" rel="noopener">Bon Bomb Luxpots Megaways JPR</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">May 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://slotcatalog.com/en/slots/Big-Hits-Blazinator" aria-label="Big Hits Blazinator Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/big-hits-blazinator-large.jpg" alt="Big Hits Blazinator" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://slotcatalog.com/en/slots/Big-Hits-Blazinator" aria-label="Big Hits Blazinator Website" target="_blank" rel="noopener">Big Hits Blazinator</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.slotcatalog.com/en/slots/Big-Hits-Blazinator" aria-label="Lucksome Website" target="_blank" rel="noopener">Lucksome</a></span> <span class="w-date">December 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.whitehatstudios.com/games/saint-nicked-jackpot-royale" aria-label="Saint Nicked JPR Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/saint-nicked-jackpot-royale-large.jpg" alt="Saint Nicked JPR" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.whitehatstudios.com/games/saint-nicked-jackpot-royale" aria-label="Saint Nicked JPR Website" target="_blank" rel="noopener">Saint Nicked JPR</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.whitehatstudios.com/" aria-label="White Hat Studios Website" target="_blank" rel="noopener">White Hat Studios</a></span> <span class="w-date">November 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="slot">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://slotcatalog.com/en/slots/Joker-Lux-Megaways" aria-label="Joker Lux Megaways Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/joker-lux-megaways-large.jpg" alt="Joker Lux Megaways" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-dice-5"></i> Slot Machine</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://slotcatalog.com/en/slots/Joker-Lux-Megaways" aria-label="Joker Lux Megaways Website" target="_blank" rel="noopener">Joker Lux Megaways</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.slotcatalog.com/en/slots/Joker-Lux-Megaways" aria-label="Lucksome Website" target="_blank" rel="noopener">Lucksome</a></span> <span class="w-date">July 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="pc">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/holdfast-large.jpg" alt="Holdfast" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-display"></i> PC</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" aria-label="Holdfast Website" target="_blank" rel="noopener">Holdfast</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://anvilgamestudios.com/" aria-label="Anvil Game Studios Website" target="_blank" rel="noopener">Anvil Game Studios</a></span> <span class="w-date">March 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="http://www.flying-squirrel-games.com/portfolio-items/speechie/" aria-label="Speechie Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/speechie-large.jpg" alt="Speechie" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="http://www.flying-squirrel-games.com/portfolio-items/speechie/" aria-label="Speechie Website" target="_blank" rel="noopener">Speechie</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="http://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">December 2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.facebook.com/customsmalta/" aria-label="Nothing To Declare Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/nothing-to-declare-large.jpg" alt="Nothing To Declare" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.facebook.com/customsmalta/" aria-label="Nothing To Declare Website" target="_blank" rel="noopener">Nothing To Declare</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">September 2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.facebook.com/CannaFarmApp/" aria-label="Canna Farm Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/canna-farm-large.jpg" alt="Canna Farm" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.facebook.com/CannaFarmApp/" aria-label="Canna Farm Website" target="_blank" rel="noopener">Canna Farm</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">November 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.facebook.com/dirttrackinsprintcars/" aria-label="Dirt Trackin&#x27; Sprint Cars Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/dirt-trackin-sprint-cars-large.jpg" alt="Dirt Trackin&#x27; Sprint Cars" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.facebook.com/dirttrackinsprintcars/" aria-label="Dirt Trackin&#x27; Sprint Cars Website" target="_blank" rel="noopener">Dirt Trackin&#x27; Sprint Cars</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">October 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://itunes.apple.com/nz/app/saif-trip/id1247397499" aria-label="Saif Trip Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/saif-trip-large.jpg" alt="Saif Trip" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://itunes.apple.com/nz/app/saif-trip/id1247397499" aria-label="Saif Trip Website" target="_blank" rel="noopener">Saif Trip</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">April 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.airsideandy.com/" aria-label="Airside Andy Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/airside-andy-large.jpg" alt="Airside Andy" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.airsideandy.com/" aria-label="Airside Andy Website" target="_blank" rel="noopener">Airside Andy</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">March 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.facebook.com/oobedooers/" aria-label="Oobedoo Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/oobedoo-large.jpg" alt="Oobedoo" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.facebook.com/oobedooers/" aria-label="Oobedoo Website" target="_blank" rel="noopener">Oobedoo</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.flying-squirrel-games.com/" aria-label="Flying Squirrel Games Website" target="_blank" rel="noopener">Flying Squirrel Games</a></span> <span class="w-date">January 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.amazon.com/VTree-Entertainment-Beasty-Karts/dp/B019T76ZSA/" aria-label="Beasty Karts Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/beasty-karts-large.jpg" alt="Beasty Karts" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.amazon.com/VTree-Entertainment-Beasty-Karts/dp/B019T76ZSA/" aria-label="Beasty Karts Website" target="_blank" rel="noopener">Beasty Karts</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.play-magic.net/" aria-label="PlayMagic Ltd. Website" target="_blank" rel="noopener">PlayMagic Ltd.</a></span> <span class="w-date">December 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.play-magic.net/rambo-the-mobile-game/" aria-label="Rambo Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/rambo-large.jpg" alt="Rambo" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.play-magic.net/rambo-the-mobile-game/" aria-label="Rambo Website" target="_blank" rel="noopener">Rambo</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.play-magic.net/" aria-label="PlayMagic Ltd. Website" target="_blank" rel="noopener">PlayMagic Ltd.</a></span> <span class="w-date">September 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="mobile">
+                        <div class="work-box">
+                            <div class="work-img">
+                                <a href="https://www.amazon.com/VTree-Entertainment-Beasty-Skaters-Android/dp/B00QXYZ638" aria-label="Beasty Skaters Website" target="_blank" rel="noopener">
+                                    <img loading="lazy" src="assets/img/commercialgames/beasty-skaters-large.jpg" alt="Beasty Skaters" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="w-line-mf"></div>
+                            <div class="work-content">
+                                <span class="w-platform"><i class="bi bi-phone"></i> Mobile</span>
+                                <div class="row">
+                                    <h3 class="w-title"><a href="https://www.amazon.com/VTree-Entertainment-Beasty-Skaters-Android/dp/B00QXYZ638" aria-label="Beasty Skaters Website" target="_blank" rel="noopener">Beasty Skaters</a></h3>
+                                    <div class="w-more">
+                                        <span class="w-ctegory"><a href="https://www.play-magic.net/" aria-label="PlayMagic Ltd. Website" target="_blank" rel="noopener">PlayMagic Ltd.</a></span> <span class="w-date">December 2014</span>
                                     </div>
                                 </div>
                             </div>
@@ -553,9 +694,9 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box text-center">
-                            <h3 class="title-a">
-                                Personal/Jam Games
-                            </h3>
+                            <h2 class="title-a">
+                                Personal Projects
+                            </h2>
                             <p class="subtitle-a">
                                 Finding Freedom from Constraints.
                             </p>
@@ -563,523 +704,536 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="project-filters" data-target="personal-grid">
+                    <button type="button" class="project-filter active" data-filter="all">All</button>
+                    <button type="button" class="project-filter" data-filter="web">Web</button>
+                    <button type="button" class="project-filter" data-filter="jam">Jams</button>
+                    <button type="button" class="project-filter" data-filter="other">Other</button>
+                </div>
+                <div class="row" id="personal-grid">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="web">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="GGJ Yeet Entry" target="_blank"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                                <a href="https://legendexmtg.netlify.app/" aria-label="Legendex" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/legendex.png" alt="Legendex" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">GGJ 2020</h6>
+                                        <span class="category">Web App</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="GGJ Yeet Entry">Untitled YEET Game</a></h3>
+                                <h3 class="card-title"><a href="https://legendexmtg.netlify.app/" aria-label="Legendex">Legendex</a></h3>
                                 <p class="card-description">
-                                    A Monthy Python themed party game, in which two players fight by 'repairing' and YEETing items using the nintendo switch joycons.
+                                    Browse and track your collection of Magic: The Gathering legendary creatures, ordered by their first appearance in the game.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-4.jpg" alt="" class="avatar rounded-circle"></a>
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-                                    <a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="GGJ Yeet Entry" target="_blank"><span class="bi bi-link-45deg" /> Link</a>
+                                    <a href="https://legendexmtg.netlify.app/" aria-label="Legendex Link" target="_blank" rel="noopener"><span class="bi bi-globe2"></span> Visit</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="web">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html" aria-label="War of the Four Races Link"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                                <a href="https://pokeidle-fork.netlify.app/" aria-label="Pokémon Idle" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/pokeidle.png" alt="Pokémon Idle" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Ludum Dare #43</h6>
+                                        <span class="category">Web Game</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="War of the Four Races Link">The War of the Four Races</a></h3>
+                                <h3 class="card-title"><a href="https://pokeidle-fork.netlify.app/" aria-label="Pokémon Idle">Pokémon Idle</a></h3>
                                 <p class="card-description">
-                                    Quick solo entry inspired by Marvel's Avengers: Infinity War which had the theme of "Sacrifices must be made".
+                                    A browser-based Pokémon idle game: travel routes, catch and evolve your team, and battle trainers for badges while it plays out on its own.
                                 </p>
                             </div>
                             <div class="card-footer">
                                 <div class="post-date">
-                                    <a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="War of the Four Races Link" target="_blank"><span class="bi bi-link-45deg" /> Link</a>
-                                    <a href="" aria-label="Play War of the Four Races"> <span class="bi bi-controller" /> Play</a>
+                                    <a href="https://pokeidle-fork.netlify.app/" aria-label="Pokémon Idle Link" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="Untitled YEET Game" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/untitled-yeet-game.png" alt="Untitled YEET Game" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">GGJ 2020</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="Untitled YEET Game">Untitled YEET Game</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A Monty Python-themed party game in which two players fight by &#x27;repairing&#x27; and YEETing items with Nintendo Switch Joy-Cons. Made with Mariano, Marie and Walki.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://globalgamejam.org/2020/games/yeet-7" aria-label="Untitled YEET Game Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/UntitledYeetGame/UntitledYEETGame.rar" aria-label="Download Untitled YEET Game" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://globalgamejam.org/2019/games/lights-out-its-time-bed" aria-label="Light&#x27;s Out: It&#x27;s Time for Bed" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/light-s-out-it-s-time-for-bed.png" alt="Light&#x27;s Out: It&#x27;s Time for Bed" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">GGJ 2019</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2019/games/lights-out-its-time-bed" aria-label="Light&#x27;s Out: It&#x27;s Time for Bed">Light&#x27;s Out: It&#x27;s Time for Bed</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A janky drop-in 4-player local co-op, made with Lynda. The theme was &quot;What home means to you&quot;, which we took literally: a sibling-rivalry combat game with flashlights.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://globalgamejam.org/2019/games/lights-out-its-time-bed" aria-label="Light&#x27;s Out: It&#x27;s Time for Bed Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LightsOut/LightsOut.rar" aria-label="Download Light&#x27;s Out: It&#x27;s Time for Bed" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/43/the-war-of-the-four-races" aria-label="The War of the Four Races" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/the-war-of-the-four-races.png" alt="The War of the Four Races" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 43</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/43/the-war-of-the-four-races" aria-label="The War of the Four Races">The War of the Four Races</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A quick solo entry inspired by Marvel&#x27;s Avengers: Infinity War. The theme was &quot;Sacrifices must be made&quot;.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/43/the-war-of-the-four-races" aria-label="The War of the Four Races Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LudumDare43/WebGL/index.html" aria-label="Play The War of the Four Races" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://alakajam.com/4th-alakajam/405/falling-apart/" aria-label="Falling Apart" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/falling-apart.png" alt="Falling Apart" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Alakajam 4</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://alakajam.com/4th-alakajam/405/falling-apart/" aria-label="Falling Apart">Falling Apart</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Made with Lynda, Mark and a cool audio guy called CDWpod. We took the theme &quot;Falling&quot; and made a small slice-of-life game that puts the player in the shoes of a &quot;Robot Combat&quot; mechanic.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://alakajam.com/4th-alakajam/405/falling-apart/" aria-label="Falling Apart Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/Alakajam4/WebGL/index.html" aria-label="Play Falling Apart" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/42/sink-or-swim" aria-label="Sink or Swim" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/sink-or-swim.png" alt="Sink or Swim" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 42</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/42/sink-or-swim" aria-label="Sink or Swim">Sink or Swim</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Another jam with buddies Sean and Lynda, plus an awesome new audio guy called Colton. We took the theme &quot;Running out of space&quot; and made a quick game about a fish in a sink and an evil psychedelic cat.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/42/sink-or-swim" aria-label="Sink or Swim Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LudumDare42/WebGL/index.html" aria-label="Play Sink or Swim" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/41/idle-hatcher" aria-label="Idle Hatcher" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/idle-hatcher.png" alt="Idle Hatcher" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 41</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/41/idle-hatcher" aria-label="Idle Hatcher">Idle Hatcher</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Made with Lynda. The theme was &quot;Combine 2 Incompatible Genres&quot;, so we paired one genre that demands full attention with another that asks as little as possible — and made an Idle Rhythm game.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/41/idle-hatcher" aria-label="Idle Hatcher Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LudumDare41/WebGL/index.html" aria-label="Play Idle Hatcher" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://globalgamejam.org/2018/games/glitch-rush" aria-label="Glitch Rush" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/glitch-rush.png" alt="Glitch Rush" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">GGJ 2018</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2018/games/glitch-rush" aria-label="Glitch Rush">Glitch Rush</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Created with Anthony, Lynda and Marlon. We took the theme &quot;Transmission&quot; and made a fully networked 4-player trivia game where players answer questions and bounce around a glitch by tapping at the right time.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://globalgamejam.org/2018/games/glitch-rush" aria-label="Glitch Rush Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/GGJ18/WebGL/index.html" aria-label="Play Glitch Rush" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
+                                    <a href="games/GGJ18/GlitchRush.apk" aria-label="Download Glitch Rush" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/40/kitchen-things" aria-label="Kitchen Things" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/kitchen-things.png" alt="Kitchen Things" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 40</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/40/kitchen-things" aria-label="Kitchen Things">Kitchen Things</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Made with Sean, Aurelien (god of sound) and Andre (god of art), whom I met for this jam. We took &quot;The more you have, the worse it is&quot; literally: as a lone restaurateur you take orders, cook and serve weird food to impatient aliens.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/40/kitchen-things" aria-label="Kitchen Things Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LudumDare40/WebGL/index.html" aria-label="Play Kitchen Things" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/39/eat-pray-live/" aria-label="Eat, Pray, Live" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/eat-pray-live.png" alt="Eat, Pray, Live" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 39</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/39/eat-pray-live/" aria-label="Eat, Pray, Live">Eat, Pray, Live</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Made with buddy Sean, plus Alex and Logan — two awesome guys I met for this jam. The theme was &quot;Running out of Power&quot;, so Sean and Alex, who were mostly responsible for how it looked and played, went with the crazy idea of giants running on &quot;Jesus Fernando Power&quot;.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/39/eat-pray-live/" aria-label="Eat, Pray, Live Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/LudumDare39/WebGL/index.html" aria-label="Play Eat, Pray, Live" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="other">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="games/StarGift/WebGL/index.html" aria-label="Star&#x27;s Gift" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/star-s-gift.png" alt="Star&#x27;s Gift" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Birthday Present</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="games/StarGift/WebGL/index.html" aria-label="Star&#x27;s Gift">Star&#x27;s Gift</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A quick &quot;game&quot; inspired by visual novels. The main character is a friend of mine, and it&#x27;s packed with inside jokes about the World of Warcraft guild I play with.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="games/StarGift/WebGL/index.html" aria-label="Play Star&#x27;s Gift" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ldjam.com/events/ludum-dare/38/tiny-mans-skies" aria-label="Tiny Man&#x27;s Skies" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/tiny-man-s-skies.png" alt="Tiny Man&#x27;s Skies" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 38</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ldjam.com/events/ludum-dare/38/tiny-mans-skies" aria-label="Tiny Man&#x27;s Skies">Tiny Man&#x27;s Skies</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A parody of the &quot;No Man&#x27;s Sky&quot; flop and how it felt to play. It&#x27;s a planet-exploration game built around the theme &quot;A Small World&quot; — my first time using real-time lighting to create a sense of grandeur. The physics are a highlight: I squeezed four different planetary behaviours out of them.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ldjam.com/events/ludum-dare/38/tiny-mans-skies" aria-label="Tiny Man&#x27;s Skies Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/TMS/WebGL/index.html" aria-label="Play Tiny Man&#x27;s Skies" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://globalgamejam.org/2017/games/ttt-trigonometry-trumps-toupees" aria-label="Trigonometry Trumps Toupees" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/trigonometry-trumps-toupees.png" alt="Trigonometry Trumps Toupees" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">GGJ 2017</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2017/games/ttt-trigonometry-trumps-toupees" aria-label="Trigonometry Trumps Toupees">Trigonometry Trumps Toupees</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    Taking the theme &quot;Waves&quot; and running with it, we made a weird, high-action PvP rock-paper-scissors game about throwing mathematical waves at Donald Trump — with one extra wave (the Mexican wave) once a player wins. Made with Andrew Calleja, Alan Duca and Mark Anthony Cassar.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://globalgamejam.org/2017/games/ttt-trigonometry-trumps-toupees" aria-label="Trigonometry Trumps Toupees Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/TTT/WebGL/index.html" aria-label="Play Trigonometry Trumps Toupees" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ludumdare.com/compo/ludum-dare-37/?action=preview&amp;uid=60316" aria-label="The Hunt Is Off!" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/the-hunt-is-off.png" alt="The Hunt Is Off!" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 37</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ludumdare.com/compo/ludum-dare-37/?action=preview&amp;uid=60316" aria-label="The Hunt Is Off!">The Hunt Is Off!</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A solo game based on the theme &quot;One Room&quot;. You play in top-down shooter view, but your job is to stop the diseases from killing each other — if one goes extinct, whatever was meant to eat it will take over and destroy the world!
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ludumdare.com/compo/ludum-dare-37/?action=preview&amp;uid=60316" aria-label="The Hunt Is Off! Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/TheHuntIsOff/WebGL/index.html" aria-label="Play The Hunt Is Off!" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ludumdare.com/compo/ludum-dare-36/?action=preview&amp;uid=60316" aria-label="Restonerant" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/restonerant.png" alt="Restonerant" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 36</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ludumdare.com/compo/ludum-dare-36/?action=preview&amp;uid=60316" aria-label="Restonerant">Restonerant</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A fun little cooking game built around the theme &quot;Ancient Technology&quot;. Neither of us had made a cooking game before, so we gave it a prehistoric spin. Made with Toms Štāls.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ludumdare.com/compo/ludum-dare-36/?action=preview&amp;uid=60316" aria-label="Restonerant Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/Restonerant/WebGL/index.html" aria-label="Play Restonerant" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ludumdare.com/compo/minild-65/?action=preview&amp;uid=60316" aria-label="Quotypo" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/quotypo.png" alt="Quotypo" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Mini Ludum Dare 65</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ludumdare.com/compo/minild-65/?action=preview&amp;uid=60316" aria-label="Quotypo">Quotypo</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    A fun little experimental game made for Mini Ludum Dare 65, with the theme &quot;Youth&quot;. We took a personal angle: youth needing guidance and lecturing on the more important sides of life. Made with Mariano Galea.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ludumdare.com/compo/minild-65/?action=preview&amp;uid=60316" aria-label="Quotypo Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/Quotypo/WebGL/index.html" aria-label="Play Quotypo" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://globalgamejam.org/2016/games/blind-prophet" aria-label="The Blind Prophet" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/the-blind-prophet.png" alt="The Blind Prophet" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">GGJ 2016</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2016/games/blind-prophet" aria-label="The Blind Prophet">The Blind Prophet</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    For the theme &quot;Ritual&quot;, we made an experimental game by taking a simple Breakout/Arkanoid concept and removing one crucial element: the visuals. Made with Edward Bamber, Mariano Galea, Miguel Mizzi and Kyle Pace.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://globalgamejam.org/2016/games/blind-prophet" aria-label="The Blind Prophet Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/TheBlindProphet/TheBlindProphet.zip" aria-label="Download The Blind Prophet" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://ludumdare.com/compo/ludum-dare-34/?action=preview&amp;uid=60316" aria-label="Yuusha Kishi" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/yuusha-kishi.png" alt="Yuusha Kishi" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Ludum Dare 34</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://ludumdare.com/compo/ludum-dare-34/?action=preview&amp;uid=60316" aria-label="Yuusha Kishi">Yuusha Kishi</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    My first solo jam entry, for the theme &quot;Growing / two-button controls&quot;. I focused on a simple two-button input mechanic, animations, and free-to-use art. It placed 788th out of 2,870 entries.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://ludumdare.com/compo/ludum-dare-34/?action=preview&amp;uid=60316" aria-label="Yuusha Kishi Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/YuushaKishi/WebGL/index.html" aria-label="Play Yuusha Kishi" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
                         <div class="card card-blog">
                             <div class="card-img">
-                                <a href="blog-single.html"><img src="assets/img/post-2.jpg" aria-label="Link" alt="" class="img-fluid"></a>
+                                <a href="https://www.facebook.com/events/1611777252430156/" aria-label="Unforeseen Lifetime" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/unforeseen-lifetime.png" alt="Unforeseen Lifetime" class="img-fluid"></a>
                             </div>
                             <div class="card-body">
                                 <div class="card-category-box">
                                     <div class="card-category">
-                                        <h6 class="category">Placeholder</h6>
+                                        <span class="category">Gecko GJ 3</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="blog-single.html" aria-label="">Placeholder</a></h3>
+                                <h3 class="card-title"><a href="https://www.facebook.com/events/1611777252430156/" aria-label="Unforeseen Lifetime">Unforeseen Lifetime</a></h3>
                                 <p class="card-description">
-                                    Placeholder Text
+                                    For this jam&#x27;s &quot;Lifetime&quot; theme, we made an interactive story-based game — and took second place. Made with Naomi Rizzo and Toms Štāls.
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#" aria-label="Person"><img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle"></a>
-                                </div>
                                 <div class="post-date">
-
+                                    <a href="https://www.facebook.com/events/1611777252430156/" aria-label="Unforeseen Lifetime Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/UnforeseenLifetime/WebGL/index.html" aria-label="Play Unforeseen Lifetime" target="_blank" rel="noopener"><span class="bi bi-play-fill"></span> Play</a>
+                                    <a href="games/UnforeseenLifetime/UnforeseenLifetime_Windows.rar" aria-label="Download Unforeseen Lifetime" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="https://globalgamejam.org/2015/games/rage-against-hipsters" aria-label="Rage Against Hipsters" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/rage-against-hipsters.png" alt="Rage Against Hipsters" class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <span class="category">GGJ 2015</span>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2015/games/rage-against-hipsters" aria-label="Rage Against Hipsters">Rage Against Hipsters</a></h3>
+                                <p class="card-description">
+                                    For the weird theme &quot;What do we do now?&quot;, we made a hybrid game — part board game, part digital — following a band&#x27;s struggle to play a concert. It won the &quot;Best Hybrid Game&quot; judges&#x27; award. Made with Marco Vergantini, Nina Olsson and Sean Savona.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-date">
+                                    <a href="https://globalgamejam.org/2015/games/rage-against-hipsters" aria-label="Rage Against Hipsters Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/RageAgainstHipsters/RageAgainstHipsters.apk" aria-label="Download Rage Against Hipsters" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6 filter-item" data-filter="jam">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="https://globalgamejam.org/2014/games/room-14" aria-label="Room 14" target="_blank" rel="noopener"><img loading="lazy" src="assets/img/jamgames/room-14.png" alt="Room 14" class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <span class="category">GGJ 2014</span>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="https://globalgamejam.org/2014/games/room-14" aria-label="Room 14">Room 14</a></h3>
+                                <p class="card-description">
+                                    For the theme &quot;We don&#x27;t see things as they are, we see them as we are&quot;, we made a 3D first-person puzzle-exploration game with a Rubik&#x27;s-cube theme. It won the &quot;Best Digital Game&quot; judges&#x27; award. Made with Alan Duca, Mark Azzopardi, Mina Tolu, Samwel Mallia and Stephen Cutajar.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-date">
+                                    <a href="https://globalgamejam.org/2014/games/room-14" aria-label="Room 14 Link" target="_blank" rel="noopener"><span class="bi bi-box-arrow-up-right"></span> Link</a>
+                                    <a href="games/Room14.zip" aria-label="Download Room 14" target="_blank" rel="noopener"><span class="bi bi-download"></span> Download</a>
                                 </div>
                             </div>
                         </div>
@@ -1091,30 +1245,21 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="copyright-box">
-                        <!-- =======================================================
-                           * Template Name: DevFolio - v4.1.0
-                           * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-                           * Author: BootstrapMade.com
-                           * License: https://bootstrapmade.com/license/
-                           ======================================================== -->
-                        <p class="copyright">Copyright &copy; 2021 <strong>Dylan Abela</strong></p>
-                        <div class="credits">Modified from a <a href="https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/">BootstrapMade</a> template.</div>
-                    </div>
-                </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/dylan-abela-a4a44a74/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Wrexial" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com/dylan.abela" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                <a href="https://discord.com/users/601590936920653854" aria-label="Discord" target="_blank" rel="noopener"><i class="bi bi-discord"></i></a>
+                <a href="mailto:dylan.abela@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
             </div>
+            <p class="copyright">Copyright &copy; <span id="footer-year">2026</span> <strong>Dylan Abela</strong></p>
         </div>
     </footer>
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

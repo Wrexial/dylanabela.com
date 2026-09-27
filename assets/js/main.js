@@ -41,6 +41,15 @@
     }
 
     /**
+     * Years of experience, calculated from the start year to the current year
+     */
+    const experienceStartYear = 2014
+    const experienceCounter = select('#years-experience')
+    if (experienceCounter) {
+        experienceCounter.setAttribute('data-purecounter-end', new Date().getFullYear() - experienceStartYear)
+    }
+
+    /**
      * Navbar links active state on scroll
      */
     let navbarlinks = select('#navbar .scrollto', true)
@@ -120,6 +129,16 @@
     })
 
     /**
+     * Mobile nav toggle (keyboard support)
+     */
+    on('keydown', '.mobile-nav-toggle', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+        }
+    });
+
+    /**
      * Mobile nav dropdowns activate
      */
     on('click', '.navbar .dropdown > a', function (e) {
@@ -175,28 +194,28 @@
     }
 
     /**
-     * Initiate portfolio lightbox 
+     * Project filters (Commercial + Personal sections)
      */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
+    on('click', '.project-filter', function () {
+        const bar = this.closest('.project-filters');
+        const gridId = bar ? bar.dataset.target : null;
+        if (!gridId) return;
+        const filter = this.dataset.filter;
+        bar.querySelectorAll('.project-filter').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        select('#' + gridId + ' .filter-item', true).forEach(item => {
+            const show = filter === 'all' || item.dataset.filter === filter;
+            item.classList.toggle('d-none', !show);
+        });
+    }, true);
 
     /**
-     * Portfolio details slider
+     * Footer copyright year
      */
-    new Swiper('.portfolio-details-slider', {
-        speed: 400,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        }
-    });
+    const footerYear = select('#footer-year');
+    if (footerYear) {
+        footerYear.textContent = new Date().getFullYear();
+    }
 
     /**
      * Preloader
@@ -208,12 +227,3 @@
         });
     }
 })()
-
-$(".option").click(function () {
-    $(".option").each(function (index) {
-        $(this).removeClass("active");
-        $(this).css("backgroundImage", "url(" + $(this).data("sml") + ")");
-    });
-    $(this).addClass("active");
-    $(this).css("backgroundImage", "url(" + $(this).data("lrg") + ")");
-});

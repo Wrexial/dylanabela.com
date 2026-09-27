@@ -13,6 +13,23 @@ body {
     color: #999999;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 10000;
+    padding: .75rem 1.25rem;
+    background-color: #B00000;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 0 0 6px 0;
+}
+
+    .skip-link:focus {
+        left: 0;
+        color: #FFFFFF;
+    }
+
 h1,
 h2,
 h3,
@@ -151,6 +168,49 @@ a {
     font-size: 1.1rem;
 }
 
+/*--/ Counters /--*/
+.count-box {
+    height: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    background-color: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+    .count-box:hover {
+        border-color: #B00000;
+        transform: translateY(-2px);
+    }
+
+    .count-box .title-s {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1;
+        color: #E50000;
+        margin-bottom: .6rem;
+    }
+
+    .count-box .purecounter {
+        display: block;
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFFFFF;
+    }
+
+    .count-box .count-label {
+        display: block;
+        margin-top: .5rem;
+        font-size: .8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #A8A8A8;
+    }
+
 /*--/ Title A /--*/
 .title-box {
     margin-bottom: 4rem;
@@ -165,7 +225,7 @@ a {
 
 .subtitle-a {
     text-decoration: none;
-    color: #999999;
+    color: #B0B0B0;
 }
 
 .line-mf {
@@ -781,6 +841,7 @@ a {
 --------------------------------------------------------------*/
 .lead {
     line-height: 1.8em;
+    color: #B0B0B0;
 }
 
 .about-info p {
@@ -838,27 +899,37 @@ a {
 }
 
     .work-box .img-fluid {
-        transform: scale(0.7);
+        transform: scale(1);
     }
 
     .work-box:hover .img-fluid {
-        transform: scale(0.85);
+        transform: scale(1.06);
     }
 
 .work-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: #D0D0D0;
 }
 
 .work-img {
-    display: flex;
+    position: relative;
+    display: block;
     overflow: hidden;
-    justify-content: center;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 
     .work-img .img-fluid {
-        transition: all 1s;
-        margin-bottom: -1.5rem;
-        margin-top: -1.5rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .6s ease;
+        margin: 0;
     }
 
 .work-content {
@@ -868,8 +939,8 @@ a {
 }
 
     .work-content .w-more {
-        color: #999999;
-        font-size: .8rem;
+        color: #B8B8B8;
+        font-size: .85rem;
     }
 
         .work-content .w-more .w-ctegory {
@@ -891,7 +962,71 @@ a {
         }
 
 .w-title a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.work-content .w-platform {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #B00000;
+    border-radius: 4px;
+    padding: 2px 12px 3px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: .7rem;
+}
+
+.work-content .w-platform i {
+    margin-right: .35rem;
+}
+
+.work-content .w-more .w-date::before {
+    content: "•";
+    margin: 0 .5rem;
+    color: #E50000;
+}
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-filter {
+    background-color: transparent;
+    border: 1px solid #B00000;
+    color: #D0D0D0;
+    border-radius: 30px;
+    padding: .4rem 1.4rem;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.project-filter:hover,
+.project-filter:focus {
+    border-color: #E50000;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.project-filter.active {
+    background-color: #B00000;
+    border-color: #B00000;
+    color: #FFFFFF;
+}
+
+.project-filter:focus-visible {
+    outline: 2px solid #E50000;
+    outline-offset: 2px;
 }
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1141,7 +1276,35 @@ a {
 --------------------------------------------------------------*/
 .card-blog {
     margin-bottom: 1rem;
+    height: 100%;
 }
+
+.card-blog .card-img {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+    .card-blog .card-img a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-blog .card-img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .6s ease;
+    }
+
+    .card-blog:hover .card-img img {
+        transform: scale(1.06);
+    }
 
 .card {
     background-color: #060606;
@@ -1177,6 +1340,7 @@ a {
     .card-blog .card-category .category {
         color: #FFFFFF;
         display: inline-block;
+        font-weight: 600;
         text-transform: uppercase;
         font-size: .7rem;
         letter-spacing: .1px;
@@ -1188,8 +1352,43 @@ a {
     margin-top: .6rem;
 }
 
+    .card-blog .card-title a {
+        color: #FFFFFF;
+    }
+
 .card-blog .card-description {
-    color: #999999;
+    color: #CFCFCF;
+    font-size: .9rem;
+    line-height: 1.55;
+    height: 12rem;
+    overflow-y: auto;
+    padding: .55rem .65rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #B00000 transparent;
+}
+
+    .card-blog .card-description::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .card-blog .card-description::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .card-blog .card-description::-webkit-scrollbar-thumb {
+        background-color: #B00000;
+        border-radius: 3px;
+    }
+
+.card-blog .card-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .card-blog .post-author {
@@ -1198,9 +1397,34 @@ a {
 
 .card-blog .post-date {
     color: #999999;
-    display: inline-block;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    float: none;
 }
+
+    .card-blog .post-date a {
+        display: inline-flex;
+        align-items: center;
+        gap: .3rem;
+        color: #E6E6E6;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 20px;
+        padding: 3px 11px;
+        font-size: .75rem;
+        line-height: 1;
+        transition: all .3s;
+    }
+
+        .card-blog .post-date a:hover {
+            color: #FFFFFF;
+            background-color: #B00000;
+        }
+
+    .card-blog .post-date a .bi {
+        font-size: .85rem;
+    }
 
 /*--------------------------------------------------------------
 # Blog Single
@@ -1362,9 +1586,33 @@ a {
 footer {
     text-align: center;
     color: #D0D0D0;
-    padding: 25px 0;
+    padding: 35px 0 25px;
     background: #050505;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
+
+    footer .footer-socials {
+        margin-bottom: 1rem;
+    }
+
+        footer .footer-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            margin: 0 .25rem;
+            border-radius: 50%;
+            background-color: #0a0a0a;
+            color: #D0D0D0;
+            font-size: 1.1rem;
+            transition: all .3s;
+        }
+
+            footer .footer-socials a:hover {
+                background-color: #B00000;
+                color: #FFFFFF;
+            }
 
     footer .copyright {
         margin-bottom: .3rem;
@@ -1372,6 +1620,7 @@ footer {
 
     footer .credits {
         margin-bottom: 0;
+        font-size: .85rem;
     }
 
         footer .credits a {

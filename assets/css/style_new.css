@@ -1383,13 +1383,6 @@ a {
         border-radius: 3px;
     }
 
-.card-blog .card-footer {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .35rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
 
 .card-blog .post-author {
     display: inline-block;

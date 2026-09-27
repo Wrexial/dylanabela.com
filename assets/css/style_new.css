@@ -1619,3 +1619,60 @@ footer {
         footer .credits a {
             color: #FFFFFF;
         }
+
+/*--------------------------------------------------------------
+# Embedded game player
+--------------------------------------------------------------*/
+#gameModal .modal-dialog {
+    max-width: min(1000px, 94vw);
+}
+
+#gameModal.portrait .modal-dialog {
+    max-width: min(560px, 94vw);
+}
+
+#gameModal .modal-content {
+    background-color: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#gameModal .modal-header {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#gameModal .modal-title {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+#gameModal .btn-close {
+    filter: invert(1) grayscale(1) brightness(1.8);
+    opacity: .8;
+}
+
+#gameModal .modal-body {
+    padding: 0;
+}
+
+.game-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 985 / 616;
+    background-color: #000000;
+}
+
+#gameModal.portrait .game-embed {
+    aspect-ratio: 535 / 832;
+}
+
+.game-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}

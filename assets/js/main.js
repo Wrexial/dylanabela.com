@@ -217,6 +217,29 @@
         footerYear.textContent = new Date().getFullYear();
     }
 
+
+    /**
+     * Embedded game player (Play buttons open a modal instead of a new tab)
+     */
+    const gameModalEl = select('#gameModal')
+    if (gameModalEl && typeof bootstrap !== 'undefined') {
+        const gameModal = new bootstrap.Modal(gameModalEl)
+        const gameFrame = select('#gameFrame')
+        const gameTitle = select('#gameModalTitle')
+        on('click', '.play-embed', function (e) {
+            e.preventDefault()
+            const name = (this.getAttribute('aria-label') || 'Game').replace(/^Play\s+/, '')
+            gameFrame.setAttribute('src', this.getAttribute('href'))
+            gameFrame.setAttribute('title', name)
+            gameTitle.textContent = name
+            gameModalEl.classList.toggle('portrait', this.dataset.orient === 'portrait')
+            gameModal.show()
+        }, true)
+        gameModalEl.addEventListener('hidden.bs.modal', () => {
+            gameFrame.setAttribute('src', 'about:blank')
+        })
+    }
+
     /**
      * Preloader
      */

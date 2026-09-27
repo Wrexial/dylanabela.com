@@ -170,7 +170,6 @@ a {
 
 /*--/ Counters /--*/
 .count-box {
-    height: 100%;
     margin-bottom: 1.5rem;
     padding: 1.75rem 1rem;
     text-align: center;
@@ -872,14 +871,79 @@ a {
     color: #999999;
 }
 
+.skill-mf .row {
+    row-gap: 1.25rem;
+}
+
+.skill-mf-block + .skill-mf-block {
+    margin-top: 3rem;
+}
+
+.skill-mf-group {
+    margin: 0 0 1.5rem;
+    padding-left: .75rem;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #D0D0D0;
+    border-left: 3px solid #E50000;
+}
+
 .skill-mf-bit {
     align-items: center;
     display: flex;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
+    height: 100%;
+    min-height: 104px;
+    padding: 1.25rem .5rem;
+    text-align: center;
+    background-color: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    transition: all .3s;
 }
 
+    .skill-mf-bit:hover {
+        border-color: #B00000;
+        transform: translateY(-2px);
+    }
+
+    .skill-mf-bit img,
+    .skill-mf-bit i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        flex: none;
+    }
+
+    .skill-mf-bit img {
+        object-fit: contain;
+        transition: transform .3s;
+    }
+
+    .skill-mf-bit i {
+        font-size: 2rem;
+        line-height: 1;
+        color: #D0D0D0;
+        transition: color .3s;
+    }
+
+    .skill-mf-bit:hover img {
+        transform: scale(1.08);
+    }
+
+    .skill-mf-bit:hover i {
+        color: #E50000;
+    }
+
     .skill-mf-bit span {
-        margin-left: 1rem;
+        margin-left: 0;
+        font-size: 1rem;
     }
 /*--------------------------------------------------------------
 # Portfolio
@@ -1275,8 +1339,12 @@ a {
 # Blog
 --------------------------------------------------------------*/
 .card-blog {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     height: 100%;
+}
+
+#personal-grid {
+    row-gap: 1.5rem;
 }
 
 .card-blog .card-img {

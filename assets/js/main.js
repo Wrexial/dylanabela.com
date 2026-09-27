@@ -240,6 +240,18 @@
         gameModalEl.addEventListener('hidden.bs.modal', () => {
             gameFrame.setAttribute('src', 'about:blank')
         })
+        // The Unity builds render a fixed-size canvas anchored top-left; centre it
+        // inside the iframe so the modal doesn't look off-centre. Same-origin only.
+        gameFrame.addEventListener('load', () => {
+            try {
+                const doc = gameFrame.contentDocument
+                if (doc && doc.head) {
+                    const style = doc.createElement('style')
+                    style.textContent = 'html,body{height:100%;margin:0;background:#000}body{display:flex;align-items:center;justify-content:center}'
+                    doc.head.appendChild(style)
+                }
+            } catch (err) { /* cross-origin iframe (e.g. PokéIdle) — leave as is */ }
+        })
     }
 
     /**

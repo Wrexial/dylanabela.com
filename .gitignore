@@ -5,3 +5,7 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Netlify build output
+/dist/
+/netlify/state.json

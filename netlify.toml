@@ -1,0 +1,12 @@
+# Netlify build configuration
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # static site — index.html lives at the repo root, no build command needed
+  publish = "."
+
+[build.environment]
+  # Node 16 is EOL; pin a supported LTS for the build + functions runtime
+  NODE_VERSION = "20"
+  # fetch Git LFS objects (the games/ builds are stored in LFS)
+  GIT_LFS_ENABLED = "true"
